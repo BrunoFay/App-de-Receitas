@@ -2,11 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
 import App from './App';
+import ColorProvider from './context/colors/ColorProvider';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <BrowserRouter>
-    <App />
+    <ColorProvider>
+      <App />
+    </ColorProvider>
   </BrowserRouter>,
   document.getElementById('root'),
 );

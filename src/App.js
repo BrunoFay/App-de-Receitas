@@ -25,12 +25,17 @@ import './styles/DetailScreen.css';
 import './styles/Header.css';
 import './styles/Favorite-Done-Pags.css';
 import './styles/ExplorePags.css';
+import ColorConfig from './pages/ColorConfig';
 
 function App() {
   return (
     <Switch>
       <Route exact path="/">
         <Login />
+      </Route>
+      
+      <Route exact path="/settings">
+        <ColorConfig />
       </Route>
 
       <Route exact path={ ['/foods', '/drinks'] }>
