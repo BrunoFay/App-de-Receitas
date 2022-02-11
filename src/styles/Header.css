@@ -1,0 +1,92 @@
+@media only screen and ( max-width : 700px ) {
+
+  .page-title {
+    flex-wrap: wrap;
+    max-width: min-content;
+  }
+
+  .backArrow-header {
+    font-size: xx-large;
+    margin-top: 2%;
+  }
+
+
+}
+
+@media only screen and ( min-width : 710px ) {
+
+  .page-title {
+    max-width: max-content;
+  }
+
+  .backArrow-header {
+    margin-top: 0.3em;
+  }
+
+}
+
+
+header > button {
+  background-color: rgba(255, 235, 205, 0);
+  border: none;
+  border-radius: 100%;
+  cursor: pointer;
+  height: 7vh;
+  margin: 3px 0;
+}
+
+
+.header-icons {
+  color: var(--colorHeaderAndFooterIcons);
+  font-size: 3em;
+}
+
+header {
+  background: var(--bgcolorHeadAndFooter);
+  border-radius: 0 0 6px 6px;
+  color: rgb(247, 229, 205);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5em;
+  justify-content: space-around;
+
+}
+
+.div-inputs-search {
+  background-color: var(--bgcolorBody);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  position: absolute;
+  top: 8vh;
+  width: 100vw;
+
+}
+
+.page-title {
+  font-size: xx-large;
+  text-align: center;
+}
+
+.div-inputs-search .radio-buttons {
+  color: black;
+  display: flex;
+  gap: 1em;
+  margin: 1vh 0;
+}
+
+.div-inputs-search div {
+  display: flex;
+  gap: 3vw;
+  justify-content: center;
+  margin-top: 1vh;
+
+}
+
+.div-inputs-search div button {
+  padding: 2px;
+}
+
+.backArrow-header {
+  font-size: xx-large;
+}

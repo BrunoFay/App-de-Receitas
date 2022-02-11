@@ -1,0 +1,68 @@
+@media only screen and ( min-width : 700px ) {
+
+  .profile-container footer {
+    margin-top: 2.3em;
+  }
+
+}
+
+.buttons-profile {
+  display: flex;
+  gap: 5em;
+  justify-content: center;
+  margin-top: 1em;
+}
+
+.buttons-profile button {
+  background-color: rgb(243, 243, 46);
+  box-shadow: 0 1px 5px rgb(109, 104, 104);
+  color: var(--colorFilters);
+}
+
+.profile-infos {
+  align-items: center;
+  align-self: center;
+  background: var(--colorLoginAndProfile);
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  font-size: x-large;
+  height: 50vh;
+  justify-content: space-around;
+  margin: 2em 0;
+  max-width: 16em;
+  min-width: 13em;
+}
+
+.profile-infos p, .profile-icons {
+  color: var(--colorBlackDetailsPage);
+}
+
+.profile-icons {
+  background: var(--bgcolorCardsAndFilters);
+  border-radius: 50%;
+  font-size: 109px;
+
+}
+
+.logout-button {
+  background-color: var(--bgcolorLogButton);
+  color: var(--bgcolorCardsAndFilters);
+
+}
+
+.buttons-profile button, .logout-button {
+  align-self: center;
+  border: unset;
+  border-radius: 3px;
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0.5vw;
+  max-height: 2em;
+  padding: 1vh;
+}
+
+.main-profile {
+  display: flex;
+  flex-direction: column;
+}

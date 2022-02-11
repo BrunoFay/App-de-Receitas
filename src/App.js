@@ -1,24 +1,94 @@
-import logo from './logo.svg';
+import React from 'react';
+import { Route, Switch } from 'react-router-dom';
+import RecipesProvider from './context/recipes/RecipesProvider';
+import RecipeFilterProvider from './context/recipe-filter/RecipeFilterProvider';
+import RecipeInProgressProvider
+from './context/recipe-in-progress/RecipeInProgressProvider';
+import RecipeDetails from './pages/RecipeDetails';
+import DoneRecipes from './pages/DoneRecipes';
+import Explore from './pages/Explore';
+import ExploreIngredients from './pages/ExploreIngredients';
+import ExploreNationalities from './pages/ExploreNationalities';
+import ExploreRecipes from './pages/ExploreRecipes';
+import FavoriteRecipes from './pages/FavoriteRecipes';
+import Recipes from './pages/Recipes';
+import Login from './pages/Login';
+import Profile from './pages/Profile';
+import RecipeInProgress from './pages/RecipeInProgress';
 import './App.css';
+import './styles/footer.css';
+import './styles/Login.css';
+import './styles/mainCards.css';
+import './styles/Profile.css';
+import './styles/RecipeInProgress.css';
+import './styles/DetailScreen.css';
+import './styles/Header.css';
+import './styles/Favorite-Done-Pags.css';
+import './styles/ExplorePags.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Switch>
+      <Route exact path="/">
+        <Login />
+      </Route>
+
+      <Route exact path={ ['/foods', '/drinks'] }>
+        <RecipeFilterProvider>
+          <RecipesProvider>
+            <Recipes />
+          </RecipesProvider>
+        </RecipeFilterProvider>
+      </Route>
+
+      <Route exact path={ ['/foods/:id', '/drinks/:id'] }>
+        <RecipeDetails />
+      </Route>
+
+      <Route exact path={ ['/foods/:id/in-progress', '/drinks/:id/in-progress'] }>
+        <RecipeInProgressProvider>
+          <RecipeInProgress />
+        </RecipeInProgressProvider>
+      </Route>
+
+      <Route exact path="/explore">
+        <Explore />
+      </Route>
+
+      <Route exact path={ ['/explore/foods', '/explore/drinks'] }>
+        <ExploreRecipes />
+      </Route>
+
+      <Route exact path={ ['/explore/foods/ingredients', '/explore/drinks/ingredients'] }>
+        <RecipeFilterProvider>
+          <ExploreIngredients />
+        </RecipeFilterProvider>
+      </Route>
+
+      <Route exact path="/explore/foods/nationalities">
+        <RecipeFilterProvider>
+          <RecipesProvider>
+            <ExploreNationalities />
+          </RecipesProvider>
+        </RecipeFilterProvider>
+      </Route>
+
+      <Route exact path="/explore/drinks/nationalities">
+        <h1>Not Found</h1>
+      </Route>
+
+      <Route exact path="/profile">
+        <Profile />
+      </Route>
+
+      <Route exact path="/done-recipes">
+        <DoneRecipes />
+      </Route>
+
+      <Route exact path="/favorite-recipes">
+        <FavoriteRecipes />
+      </Route>
+    </Switch>
   );
 }
 

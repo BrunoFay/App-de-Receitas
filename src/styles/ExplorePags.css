@@ -1,0 +1,158 @@
+@media only screen and ( max-width : 700px ) {
+
+  .logo-explore {
+    font-size: 300px;
+    margin: 7.71vh 0;
+  }
+
+  .explore-buttons {
+    height: 10vh;
+  }
+
+  .explore-buttons button {
+    background-color: var(--bgcolorCardsAndFilters);
+    margin-top: 2.5%;
+    max-height: 5vh;
+    padding: 6px;
+  }
+
+  .explore-pages-ingredients {
+    flex-direction: column;
+    max-height: 80vh;
+  }
+
+  .ingredient-card {
+    font-size: larger;
+    gap: 1.5em;
+    margin: 0.3em 0;
+    width: 70vw;
+  }
+
+  .explore-buttons-categories button {
+    padding: 1em;
+  }
+}
+
+@media only screen and ( min-width : 700px ) {
+
+  .logo-explore {
+    font-size: 400px;
+    margin: 8vh 0 11vh;
+  }
+
+  .explore-pages-ingredients {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px 0;
+  }
+
+  .explore-buttons button {
+    font-size: large;
+    margin-top: 10px;
+    max-height: 5vh;
+    padding: 7px;
+  }
+
+  .ingredient-card {
+    font-size: larger;
+    gap: 1.5em;
+    margin: 0.3em 0;
+    width: 20em;
+  }
+
+  .explore-buttons-categories button {
+    padding: 1.5em;
+
+  }
+
+  .explore-container footer {
+    position: relative;
+    top: 1.4em;
+  }
+
+}
+
+/* explore */
+.main-explore {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.explore-buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.explore-buttons button {
+  background-color: var(--bgcolorCardsAndFilters);
+  border: none;
+  box-shadow: 1px 2px 8px black;
+  font-size: large;
+
+}
+
+.explore-buttons-categories {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  height: 82vh;
+  justify-content: space-evenly;
+}
+
+.explore-buttons-categories button {
+  align-self: center;
+  background-color: var(--bgcolorCardsAndFilters);
+  border: none;
+  border-radius: 10px;
+  box-shadow: 2px 2px 3px rgba(27, 26, 26, 0.781);
+  color: var(--colorBlackDetailsPage);
+  font-size: x-large;
+  font-weight: 550;
+  max-width: fit-content;
+
+}
+
+.explore-pages-ingredients {
+  display: flex;
+  gap: 1em;
+  overflow-x: scroll;
+}
+
+.ingredient-card {
+  align-self: center;
+  background-color: var(--bgcolorCardsAndFilters);
+  border-radius: 7px;
+  box-shadow: 0 5px 4px rgb(0 0 0 / 53%);
+  color: var(--colorBlackDetailsPage);
+  display: flex;
+  font-size: larger;
+
+}
+
+.ingredient-card p {
+  margin-top: 1em;
+  text-align: center;
+}
+
+.ingredient-card img {
+  object-fit: contain;
+  width: 7em;
+}
+
+.explore-pages-ingredients select {
+  background-color: var(--bgcolorCardsAndFilters);
+  border: none;
+  box-shadow: 0 0 3px black;
+  font-size: large;
+  left: 34%;
+  position: relative;
+  top: 5px;
+  width: fit-content;
+}
+
+.logo-explore {
+  align-self: center;
+  position: relative;
+
+}

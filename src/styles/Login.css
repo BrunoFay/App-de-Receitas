@@ -1,0 +1,62 @@
+.login-container {
+  align-content: center;
+  background: var(--colorLoginAndProfile);
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+}
+
+.logo-login {
+  bottom: 15px;
+  font-size: 40px;
+  left: 4.8em;
+  position: relative;
+}
+
+.login-form {
+  background: #66326b;
+  border-radius: 7px;
+  box-shadow: 0 1px 4px rgb(83, 81, 81);
+  color: white;
+  font-size: x-large;
+  gap: 1em;
+  margin-top: 6em;
+  max-height: 12em;
+  padding: 1em;
+  position: relative;
+}
+
+.login-form, .login-form div label {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form:focus-within {
+  box-shadow: 0 1px 8px rgb(59, 58, 58);
+}
+
+
+.login-form input {
+  border: none;
+  border-radius: 3px;
+  font-size: medium;
+  max-width: 15em;
+  padding: 5px;
+}
+
+.login-form button {
+  align-self: center;
+  border: none;
+  border-radius: 7px;
+  font-size: large;
+  height: 1.5em;
+  margin-top: 1%;
+  width: 5em;
+}
+
+.login-form button:enabled {
+  background-color: var(--colorBlackDetailsPage);
+  color: white;
+  font-weight: 600;
+}
+

@@ -1,0 +1,160 @@
+@media only screen and ( max-width : 700px ) {
+
+  .container-Recipe-Progress ul {
+    margin-top: 30%;
+  }
+
+  .container-Recipe-Progress .recipe-title {
+    bottom: 25%;
+  }
+
+  .container-Recipe-Progress img {
+    max-height: 14em;
+    top: 7em;
+  }
+
+  .container-Recipe-Progress .back-arrow {
+    margin-top: 5px;
+  }
+}
+
+@media only screen and ( min-width : 710px ) {
+
+  .container-Recipe-Progress ul {
+    margin-top: 10%;
+
+  }
+
+  .container-Recipe-Progress p {
+    padding: 3vw;
+    width: 60vw;
+  }
+
+  .recipe-in-progress-page {
+    margin-left: 10vw;
+    max-width: 80vw;
+  }
+
+  .container-Recipe-Progress .recipe-title {
+    bottom: 35%;
+  }
+
+  .container-Recipe-Progress img {
+    box-shadow: 0 2px 5px black;
+    top: 5em;
+  }
+
+  .container-Recipe-Progress .back-arrow, .favoriteAndShared-button {
+    margin-top: 15px;
+  }
+
+  .favoriteAndShared-button {
+    background: #f0f8ff00;
+    font-size: 40px;
+    margin-right: 1em;
+    padding: 3px;
+  }
+}
+
+.recipe-in-progress-page {
+  align-items: center;
+  background-color: var(--bgcolorCardsAndFilters);
+  border-radius: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+
+}
+
+.recipe-in-progress-page img {
+  height: 30em;
+  object-fit: contain;
+  width: 10em;
+
+}
+
+.finish-recipe-btn {
+  align-self: center;
+  border-radius: 1em;
+  font-size: larger;
+  margin-bottom: 1em;
+  padding: 6px;
+  width: 15em;
+}
+
+.finish-recipe-btn:enabled {
+  background-color: var(--bgcolorHeadAndFooter);
+  border: none;
+  color: var(--bgcolorCardsAndFilters);
+}
+
+.container-Recipe-Progress .recipe-title {
+  position: relative;
+}
+
+.container-Recipe-Progress img {
+  border-radius: 22%;
+  max-height: 14em;
+  object-fit: cover;
+  position: absolute;
+}
+
+.container-Recipe-Progress {
+  background-color: var(--bgcolorHeadAndFooter);
+  border-radius: 10px;
+
+}
+
+.container-Recipe-Progress ul {
+  list-style: none;
+}
+
+.container-Recipe-Progress p {
+  padding: 3vw;
+}
+
+.recipeInprogress {
+  align-items: center;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  height: 40vh;
+  justify-content: center;
+  width: 100vw;
+}
+
+.recipeInprogress button {
+  border: none;
+  position: absolute;
+  right: 8px;
+  top: 2px;
+}
+
+
+.container-Recipe-Progress .favoriteAndShared-button {
+  color: var(--bgcolorCardsAndFilters);
+
+}
+
+/* referencia
+ https://stackoverflow.com/questions/4148499/how-to-style-a-checkbox-using-css */
+
+.checkbox {
+  appearance: none;
+  background-color: rgb(197, 190, 190);
+  border-radius: 2px;
+  cursor: pointer;
+  height: 17px;
+  margin-right: 1em;
+  position: relative;
+  top: 5px;
+  width: 17px;
+}
+
+.checkbox:focus {
+  outline: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.checkbox:checked {
+  background: var(--bgcolorHeadAndFooter) url('data:image/gif;base64,R0lGODlhCwAKAIABAP////3cnSH5BAEKAAEALAAAAAALAAoAAAIUjH+AC73WHIsw0UCjglraO20PNhYAOw==') 3px 3px no-repeat;
+}

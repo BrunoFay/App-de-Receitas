@@ -1,0 +1,231 @@
+@media only screen and ( max-width : 700px ) {
+
+  h3 {
+    margin-left: 0.5em;
+  }
+
+  .instructions {
+    margin: 1rem 0 2em;
+    max-height: 20vh;
+    overflow: scroll;
+  }
+
+  .carousel {
+    overflow-x: scroll;
+  }
+
+  .recipe-category {
+    margin-top: 1.2em;
+    position: absolute;
+    right: 44px;
+    top: 11em;
+  }
+
+  .back-arrow {
+    font-size: x-large;
+    left: 20px;
+    position: absolute;
+    top: 1.8em;
+  }
+}
+
+@media only screen and ( min-width : 710px ) {
+
+  h3 {
+    margin-left: 34%;
+  }
+
+  .details-container p {
+    align-self: center;
+    color: var(--colorBlackDetailsPage);
+    font-size: larger;
+    padding: 10px;
+    width: 50vw;
+  }
+
+  .carousel {
+    align-self: center;
+    border-radius: 7px;
+    box-shadow: 0 0 10px rgb(95, 93, 93);
+    max-width: 70vw;
+    overflow-x: scroll;
+
+  }
+
+  .carousel::-webkit-scrollbar, .filters-button::-webkit-scrollbar {
+    width: 1em;
+
+    /* creates padding around scroll thumb */
+  }
+
+  .carousel::-webkit-scrollbar-track, .filters-button::-webkit-scrollbar-track {
+    background: var(--bgcolorHeadAndFooter);
+
+    /* color of the tracking area */
+  }
+
+  .carousel::-webkit-scrollbar-thumb, .filters-button::-webkit-scrollbar-thumb {
+    background-color: var(--colorFilters);
+
+    /* color of the scroll thumb */
+    border-radius: 20px;
+
+    /* roundness of the scroll thumb */
+
+  }
+
+  .recipe-category {
+    left: 26em;
+    position: absolute;
+    top: 11em;
+  }
+
+  .back-arrow {
+    font-size: 45px;
+    left: 1em;
+    position: absolute;
+    top: 1em;
+  }
+
+}
+
+.carousel {
+  background-color: var(--bgcolorCardsAndFilters);
+  display: flex;
+  margin: 1rem 0 2rem;
+  text-align: center;
+
+}
+
+.carousel section {
+  padding: 4px;
+}
+
+
+.details-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+}
+
+.buttons-status {
+  align-self: center;
+  display: flex;
+}
+
+.details-header {
+  align-items: center;
+  background-color: var(--bgcolorHeadAndFooter);
+  border-radius: 7px 7px 130px 130px;
+  display: flex;
+  flex-direction: column;
+  height: 30vh;
+  justify-content: space-between;
+
+}
+
+.favoriteAndShared-button {
+  background: #f0f8ff00;
+  font-size: xx-large;
+  padding: 3px;
+}
+
+.recipe-photo {
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgb(51, 48, 48);
+  margin-top: 1em;
+  max-height: 10em;
+  max-width: 10em;
+  position: relative;
+}
+
+.recipe-title {
+  color: var(--bgcolorCardsAndFilters);
+  font-size: xx-large;
+  font-weight: 600;
+  text-align: center;
+  text-shadow: 0 1px 1px rgb(12, 11, 11);
+}
+
+.btn-StartRecipe, .btn-ContinueRecipe, .done-recipe {
+  border: none;
+  border-radius: 5em;
+  font-size: larger;
+  font-weight: 600;
+  margin: 4rem 0 1em;
+  max-width: 9em;
+  padding: 9px;
+}
+
+.btn-StartRecipe {
+  background-color: var(--bgcolorHeadAndFooter);
+  color: white;
+}
+
+.btn-ContinueRecipe {
+  background-color: yellow;
+  color: var(--colorFilters);
+}
+
+.done-recipe {
+  background-color: var(--colorFilters);
+  color: var(--bgcolorCardsAndFilters);
+}
+
+.recipe-category {
+  color: #919191;
+  font-size: large;
+  font-style: italic;
+  margin-top: 1.2em;
+
+}
+
+.details-container p {
+  align-self: center;
+  color: var(--colorBlackDetailsPage);
+  padding: 10px;
+}
+
+.ingredients-list {
+  align-self: center;
+  margin: 1rem 0;
+}
+
+.ingredients-list li {
+  font-size: large;
+
+}
+
+
+.instructions:hover {
+  max-height: 80vh;
+}
+
+h3 {
+  color: var(--colorFilters);
+
+}
+
+iframe {
+  align-self: center;
+  margin-bottom: 2em;
+}
+
+.footer-buttons {
+  background-color: var(--bgcolorHeadAndFooter);
+  display: flex;
+  gap: 5em;
+  justify-content: space-evenly;
+}
+
+.footer-buttons button {
+  border: none;
+  color: var(--bgcolorCardsAndFilters);
+}
+
+.back-arrow {
+  background-color: rgba(255, 255, 255, 0.041);
+  border: none;
+  color: var(--bgcolorCardsAndFilters);
+}

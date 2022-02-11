@@ -1,0 +1,126 @@
+@media only screen and ( max-width : 700px ) {
+
+  .cards-done {
+    width: 90vw;
+  }
+
+  .filters-button-recipes {
+    justify-content: space-around;
+  }
+}
+
+@media only screen and ( min-width : 710px ) {
+
+  .cards-done {
+    width: 27em;
+
+  }
+
+  .filters-button-recipes {
+    gap: 2em;
+    justify-content: center;
+  }
+}
+
+
+.filters-button-recipes {
+  display: flex;
+}
+
+.filters-button-recipes button {
+  background-color: var(--bgcolorFilters);
+  border: none;
+  border-radius: 5em;
+  color: var(--colorFilters);
+  font-size: medium;
+  font-weight: 600;
+  margin: 5px 0;
+  min-width: 7em;
+  padding: 5px;
+}
+
+.cards-done button {
+  border: none;
+}
+
+.filters-button-recipes button:focus {
+  background-color: var(--bgcolorHeadAndFooter);
+  color: var(--bgcolorCardsAndFilters);
+}
+
+.cards-done {
+  align-self: center;
+  background-color: var(--bgcolorCardsAndFilters);
+  border-radius: 7px;
+  box-shadow: 1px 1px 5px rgb(90, 88, 88);
+  display: flex;
+  gap: 1em;
+  justify-content: space-around;
+  margin: 1em 0.5em;
+  text-align: center;
+}
+
+.cards-done img {
+  margin-bottom: 0.4rem;
+}
+
+.cards-done .infos {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+
+.cards-done h2 {
+  color: var(--colorFilters);
+  margin-top: 2px;
+}
+
+.container-doneRecipes {
+  display: flex;
+  flex-direction: column;
+}
+
+.infos p {
+  color: grey;
+  font-style: italic;
+}
+
+.favorite-card {
+  background-color: var(--bgcolorCardsAndFilters);
+  border-radius: 7px;
+  box-shadow: 0 2px 5px black;
+  display: flex;
+  justify-content: space-around;
+  margin: 10px;
+  max-width: 94vw;
+}
+
+.favorite-card .buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.favorite-card .buttons button {
+  border: none;
+
+}
+
+.favorite-card .infos {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  text-align: center;
+}
+
+.favorite-card h2 {
+  color: var(--colorFilters);
+}
+
+.favorite-card img {
+  border-radius: 7px;
+  margin-top: 5px;
+  max-width: 30vw;
+  object-fit: contain;
+}
