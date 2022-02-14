@@ -13,6 +13,9 @@
     overflow-y: hidden;
 
   }
+  .image-DoneCard{
+    margin-left: 5px;
+  }
 }
 
 @media only screen and ( min-width : 710px ) {
@@ -43,7 +46,7 @@
   }
 }
 
-.cards-content img, .image-DoneCard, .carousel img {
+.cards-content img,.carousel img {
   border-radius: 50%;
   max-height: 15vh;
 }

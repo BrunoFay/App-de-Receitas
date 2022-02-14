@@ -7,8 +7,16 @@
   .filters-button-recipes {
     justify-content: space-around;
   }
-}
+  .favorite-card {
+    max-width: 94vw;
+  
+  }
+  .favorite-card img {
+    max-width: 30vw;
 
+  }
+  
+}
 @media only screen and ( min-width : 710px ) {
 
   .cards-done {
@@ -20,6 +28,15 @@
     gap: 2em;
     justify-content: center;
   }
+  .favorite-card {
+    width: 34vw;
+    align-self: center;
+
+  }
+  .favorite-card img {
+    max-width: 11vw;
+  }
+  
 }
 
 
@@ -91,9 +108,8 @@
   border-radius: 7px;
   box-shadow: 0 2px 5px black;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   margin: 10px;
-  max-width: 94vw;
 }
 
 .favorite-card .buttons {
@@ -118,9 +134,8 @@
   color: var(--colorFilters);
 }
 
-.favorite-card img {
+.favorite-card img,.image-DoneCard {
   border-radius: 7px;
   margin-top: 5px;
-  max-width: 30vw;
   object-fit: contain;
 }
