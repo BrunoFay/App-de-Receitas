@@ -33,7 +33,7 @@ function Login() {
 
   return (
     <div className="login-container">
-      <form className="login-form" onSubmit={ handleSubmit }>
+      <form className="login-form" onSubmit={handleSubmit}>
         <GiChefToque className="logo-login" />
         <div className="mb-3">
           <label htmlFor="email-input" className="form-label">
@@ -44,8 +44,8 @@ function Login() {
               className="form-control"
               data-testid="email-input"
               placeholder="email@example.com"
-              value={ email }
-              onChange={ ({ target: { value } }) => setEmail(value) }
+              value={email}
+              onChange={({ target: { value } }) => setEmail(value)}
             />
           </label>
         </div>
@@ -58,8 +58,8 @@ function Login() {
               className="form-control"
               data-testid="password-input"
               placeholder="Password"
-              value={ password }
-              onChange={ ({ target: { value } }) => setPassword(value) }
+              value={password}
+              onChange={({ target: { value } }) => setPassword(value)}
             />
           </label>
         </div>
@@ -67,11 +67,11 @@ function Login() {
           type="submit"
           className="btn btn-primary"
           data-testid="login-submit-btn"
-          disabled={ isButtonDisabled }
+          disabled={isButtonDisabled}
         >
           Enter
         </button>
-
+        <span className="madeBy">Made by Group 9 - Class 16-B</span>
       </form>
     </div>
   );

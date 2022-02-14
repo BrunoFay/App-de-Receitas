@@ -35,6 +35,6 @@ footer button {
 }
 
 .footer-icon {
-  color: var(--colorHeaderAndFooterIcons);
+  color: var(--colorIcons);
   font-size: 35px;
 }

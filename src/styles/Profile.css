@@ -1,4 +1,4 @@
-@media only screen and ( min-width : 700px ) {
+@media only screen and (min-width : 700px) {
 
   .profile-container footer {
     margin-top: 2.3em;
@@ -28,7 +28,6 @@
   flex-direction: column;
   font-size: x-large;
   height: 50vh;
-  justify-content: space-around;
   margin: 2em 0;
   max-width: 16em;
   min-width: 13em;
@@ -39,15 +38,15 @@
 }
 
 .profile-icons {
-  background: var(--bgcolorCardsAndFilters);
+  background: white;
   border-radius: 50%;
   font-size: 109px;
-
+  margin-bottom: 1em;
 }
 
 .logout-button {
   background-color: var(--bgcolorLogButton);
-  color: var(--bgcolorCardsAndFilters);
+  color: white;
 
 }
 
@@ -65,4 +64,14 @@
 .main-profile {
   display: flex;
   flex-direction: column;
+}
+
+.settings-btn {
+  font-size: xx-large;
+  border: none;
+  background: none;
+  position: relative;
+  top: 10px;
+  left: 130px;
+  cursor: pointer;
 }

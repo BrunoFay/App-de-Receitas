@@ -1,0 +1,68 @@
+@media only screen and (min-width : 710px) {
+  .main-colorConfig form {
+    gap: 1em;
+
+  }
+
+  .main-colorConfig label {
+    gap: 1em;
+
+  }
+
+}
+
+@media only screen and (max-width : 700px) {
+  .main-colorConfig form {
+    gap: 0.7em;
+  }
+
+  .main-colorConfig label {
+    gap: 1em;
+  }
+
+}
+
+.main-colorConfig {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--colorLoginAndProfile);
+  height: 100vh;
+}
+
+.main-colorConfig form {
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-colorConfig label {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: large;
+  color: azure;
+  font-weight: 600;
+  text-shadow: 1px 1px 1px rgb(0, 0, 0);
+}
+
+.main-colorConfig h1 {
+  text-shadow: 1px 1px 1px rgb(71, 58, 58);
+
+}
+
+.main-colorConfig input {
+  align-self: center;
+}
+
+.main-colorConfig button {
+  font-size: large;
+  width: 5em;
+  align-self: center;
+  padding: 2px;
+  background-color: var(--bgcolorLogButton);
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}

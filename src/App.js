@@ -6,6 +6,7 @@ import RecipeInProgressProvider
 from './context/recipe-in-progress/RecipeInProgressProvider';
 import RecipeDetails from './pages/RecipeDetails';
 import DoneRecipes from './pages/DoneRecipes';
+import ColorConfig from './pages/ColorConfig';
 import Explore from './pages/Explore';
 import ExploreIngredients from './pages/ExploreIngredients';
 import ExploreNationalities from './pages/ExploreNationalities';
@@ -25,8 +26,7 @@ import './styles/DetailScreen.css';
 import './styles/Header.css';
 import './styles/Favorite-Done-Pags.css';
 import './styles/ExplorePags.css';
-import ColorConfig from './pages/ColorConfig';
-
+import './styles/ColorConfig.css'
 function App() {
   return (
     <Switch>

@@ -9,6 +9,7 @@ const INITIAL_STATE = {
   colorFilters: '',
   colorBody: '',
   colorDetails: '',
+  colorHeaderAndFooterIcons: '',
 };
 export default function ColorConfig() {
   const [colorApp, setColorsApp] = useState(INITIAL_STATE)
@@ -18,8 +19,9 @@ export default function ColorConfig() {
     colorBgFilters,
     colorFilters,
     colorBody,
-    colorDetails, } = INITIAL_STATE;
-  const history =useHistory()
+    colorDetails,
+    colorHeaderAndFooterIcons, } = INITIAL_STATE;
+  const history = useHistory()
 
 
   function changeColor(name, value) {
@@ -30,6 +32,7 @@ export default function ColorConfig() {
       colorFilters: '--colorFilters',
       colorBody: '--bgcolorBody',
       colorDetails: '--colorBlackDetailsPage',
+      colorHeaderAndFooterIcons: '--colorIcons',
     }
     document.body.style.setProperty(`${options[name]}`, `${value}`);
   }
@@ -40,14 +43,23 @@ export default function ColorConfig() {
     changeColor(name, value)
   }
   return (
-    <>
+    <main className="main-colorConfig">
       <h1> ColorConfig </h1>
-      <form onSubmit={()=>history.push('/')}>
+      <form onSubmit={() => history.push('/profile')}>
         <label>
-          Header and Footer
+          Header and Footer BackGround
           <input
             name='colorHeadAndFooter'
             value={colorHeadAndFooter}
+            type='color'
+            onChange={(e) => handleInputChange(e)}
+          />
+        </label>
+        <label>
+          Header and Footer icons
+          <input
+            name='colorHeaderAndFooterIcons'
+            value={colorHeaderAndFooterIcons}
             type='color'
             onChange={(e) => handleInputChange(e)}
           />
@@ -89,7 +101,7 @@ export default function ColorConfig() {
           />
         </label>
         <label>
-          Text Filters
+          Text Filters and Card Title
           <input
             name='colorFilters'
             value={colorFilters}
@@ -97,8 +109,8 @@ export default function ColorConfig() {
             onChange={(e) => handleInputChange(e)}
           />
         </label>
-        <button>test</button>
+        <button>Edit</button>
       </form>
-    </>
+    </main>
   )
 }

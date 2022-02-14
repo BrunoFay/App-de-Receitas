@@ -37,14 +37,14 @@ header > button {
 
 
 .header-icons {
-  color: var(--colorHeaderAndFooterIcons);
+  color: var(--colorIcons);
   font-size: 3em;
 }
 
 header {
   background: var(--bgcolorHeadAndFooter);
   border-radius: 0 0 6px 6px;
-  color: rgb(247, 229, 205);
+  color: var(--colorIcons);
   display: flex;
   flex-wrap: wrap;
   gap: 1.5em;

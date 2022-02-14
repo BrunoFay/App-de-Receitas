@@ -17,11 +17,13 @@
 
   --bgcolorFilters : #f39e7d;
 
-  --bgcolorLogButton : #50051a;
+  --bgcolorLogButton : #140106;
 
   --colorFilters: #333472;
 
   --colorLoginAndProfile: linear-gradient(to top, #f12711, #f5af19);
+
+  --colorIcons: rgb(248, 245, 245);
 }
 
 body {

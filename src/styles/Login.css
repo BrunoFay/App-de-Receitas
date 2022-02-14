@@ -52,11 +52,18 @@
   height: 1.5em;
   margin-top: 1%;
   width: 5em;
+  cursor: not-allowed;
 }
 
 .login-form button:enabled {
-  background-color: var(--colorBlackDetailsPage);
+  background-color: var(--bgcolorLogButton);
   color: white;
   font-weight: 600;
+  cursor: pointer;
 }
 
+.madeBy{
+  color: rgba(128, 128, 128, 0.658);
+font-size: small;
+text-align: center;
+}
